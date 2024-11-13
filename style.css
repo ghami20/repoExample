@@ -11,6 +11,12 @@ body{
     padding: 1rem;
     /*Nos da el color de fondo*/
     background-color: #a8a8a8;
+    position: fixed;
+    width: 100%;
+    top:0;
+}
+#home{
+    margin-top:300px ;
 }
 ul{
     /*En la listas quita los puntos del costado*/
@@ -36,9 +42,11 @@ li{
     /*Margin es el espacio entre elementos, vendría a ser como el aire o espacio personal*/
     margin: 20px;
     border-radius: 10px;
+    transition: transform 1.3s ease;
 }
 li:hover{
-    scale: 1.2;
+  
+    transform: scale(1.2);
 }
 a{
     /*Quita la linea de abajo de los links*/
