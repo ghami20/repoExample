@@ -37,6 +37,9 @@ li{
     margin: 20px;
     border-radius: 10px;
 }
+li:hover{
+    scale: 1.2;
+}
 a{
     /*Quita la linea de abajo de los links*/
     text-decoration: none;
