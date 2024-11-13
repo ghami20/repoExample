@@ -1,0 +1,81 @@
+body{
+    background-color: #b6b6b6;
+    /*Centra el conteido dentro del contenedor
+    Como body engloba todo, esta afectando a TODO el contenido, todo se centra al medio
+    */
+    text-align: center;
+
+}
+.contenedor{
+    /*Padding me daba un espacio, entre el borde, y el contenido*/
+    padding: 1rem;
+    /*Nos da el color de fondo*/
+    background-color: #78b5f3;
+}
+ul{
+    /*En la listas quita los puntos del costado*/
+    list-style: none;
+}
+.imagen{
+    /*Borde se redondea, el 50% dentro de un elemento que ocupe el mismo ancho que alto hace que se cea circular*/
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    /*Hacemos que el borde sea de 3px tiene es color negro, y su estilo es solid*/
+    border:3px black solid;
+}
+
+li{
+    /*Display inline-block, convierte los elementos a elementos agrupables(se pueden mostrar uno al lado del otro)
+    según el espacio del contenedor padre van a ir adaptandose
+    */
+    display:inline-block;
+
+    background-color: blue;
+    padding: 10px;
+    /*Margin es el espacio entre elementos, vendría a ser como el aire o espacio personal*/
+    margin: 20px;
+    border-radius: 10px;
+}
+a{
+    /*Quita la linea de abajo de los links*/
+    text-decoration: none;
+    /*Color cambia el color de texto*/
+    color: aliceblue;
+}
+.perfil{
+    display: none;
+    /*Oculto un elemento*/
+    
+}
+section,footer{
+    background-color: #56d7d5;
+    padding: 50px;
+    margin-top: 100px;
+}
+/*Media queries estos estilos se aplican SOLO SI la pantalla mide menos de 768px*/
+@media (max-width: 768px) {
+    .perfil{
+        display: block;
+        /*Muestro un elemento*/
+
+    }
+    ul{
+
+        
+        /*Le pongo un color*/
+        background-color: #b6b6b6;
+        /*se oculta*/
+        display: none;
+        padding: 10px;
+        width: 200px;
+    }
+    li{
+        width: 100px;
+       /*Hace que los elementos ocupen todo el ancho, 
+       y no se puedan agrupar, no se pueden poner uno al lado de otro*/
+        display: block;
+    }
+    
+
+}
